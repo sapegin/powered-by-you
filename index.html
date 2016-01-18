@@ -5,6 +5,9 @@
     <title>Powered by You</title>
     <meta name="viewport" content="width=device-width">
     <style>
+    * {
+        box-sizing: border-box;
+    }
     body {
         margin: 0 auto;
         text-align: center;
@@ -21,8 +24,48 @@
         margin-top: 1em;
         font-size: 14px;
     }
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+        color: #1283c3;
+    }
     .content {
         text-align: left;
+    }
+    .forkme {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 149px;
+        height: 149px;
+        z-index: 999;
+    }
+    .forkme-i {
+        position: relative;
+        right: -37px;
+        top: -22px;
+        display: block;
+        width: 190px;
+        padding: 5px 15px;
+        text-align: center;
+        font-size: 14px;
+        background: #1283c3;
+        text-decoration: none;
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+        -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+    }
+    .forkme-i,
+    .forkme-i:link,
+    .forkme-i:visited,
+    .forkme-i:hover,
+    .forkme-i:active,
+    .forkme-i:focus {
+        color: #fff;
     }
     </style>
 </head>
@@ -52,6 +95,10 @@
     <div class="content">
         <p>Add this markdown to your readme:</p>
         <code>[![Powered by You](http://sapegin.github.io/powered-by-you/badge.svg)](http://sapegin.github.io/powered-by-you/)</code>
+    </div>
+
+    <div class="forkme">
+        <a href="https://github.com/sapegin/powered-by-you" class="forkme-i">Fork me on GitHub</a>
     </div>
 </body>
 </html>
